@@ -18,8 +18,8 @@ if ("speechSynthesis" in window) {
 let button = document.getElementById("speak");
 
 // Get the text input element.
-// let speechMsgInput = document.getElementById("speech-msg");
-let speechMsgInput = document.getElementById("word");
+let speechMsgInput = document.getElementById("speech-msg");
+// let speechMsgInput = document.getElementById("word");
 
 // Create a new utterance for the specified text and add it to
 // the queue.
@@ -51,10 +51,10 @@ function speak(text) {
 
 // Set up an event listener for when the 'speak' button is clicked.
 button.addEventListener("click", function (e) {
-  // if (speechMsgInput.value.length > 0) {
-  //   speak(speechMsgInput.value);
-  // }
-  if (speechMsgInput.innerText.length > 0) {
-    speak(speechMsgInput.innerText);
+  if (speechMsgInput.value.length > 0) {
+    speak(speechMsgInput.value);
   }
+  // if (speechMsgInput.innerText.length > 0) {
+  //   speak(speechMsgInput.innerText);
+  // }
 });
