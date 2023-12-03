@@ -19,7 +19,7 @@ let button = document.getElementById("speak");
 
 // Get the text input element.
 let speechMsgInput = document.getElementById("speech-msg");
-// let speechMsgInput = document.getElementById("word");
+// let speechMsgInput = document.getElementById("words");
 
 // Create a new utterance for the specified text and add it to
 // the queue.
